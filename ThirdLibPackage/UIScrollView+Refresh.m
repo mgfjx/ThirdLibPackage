@@ -22,7 +22,7 @@ static char *canPullDownKey = "canPullDownKey";
         
         self.mj_header = header;
     }else{
-        [self.mj_header removeFromSuperview];
+        self.mj_header = nil;
     }
 }
 
@@ -38,7 +38,7 @@ static char *canPullUpKey = "canPullUpKey";
         MJRefreshBackNormalFooter *footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRefreshing)];
         self.mj_footer = footer;
     }else{
-        [self.mj_footer removeFromSuperview];
+        self.mj_footer = nil;
     }
 }
 
@@ -69,13 +69,15 @@ static char *footerRefreshBlockKey = "footerRefreshBlockKey";
 // 方法
 - (void)headerRefreshing {
     if (self.headerRefreshBlock) {
-        self.headerRefreshBlock(self);
+        __block typeof(self) weakSelf = self;
+        self.headerRefreshBlock(weakSelf);
     }
 }
 
 - (void)footerRefreshing {
     if (self.footerRefreshBlock) {
-        self.footerRefreshBlock(self);
+        __block typeof(self) weakSelf = self;
+        self.footerRefreshBlock(weakSelf);
     }
 }
 
@@ -93,6 +95,10 @@ static char *footerRefreshBlockKey = "footerRefreshBlockKey";
 
 - (void)stopFooterRefreshing {
     [self.mj_footer endRefreshing];
+}
+
+- (void)dealloc {
+    NSLog(@"%@ dealloc", NSStringFromClass([self class]));
 }
 
 @end

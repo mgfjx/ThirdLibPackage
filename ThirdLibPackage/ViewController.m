@@ -12,6 +12,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) UIScrollView *scrollView ;
+
 @end
 
 @implementation ViewController
@@ -19,10 +21,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self initScrollView];
+    
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(100, 100, 100, 100);
+    [button addTarget:self action:@selector(setPropertys:) forControlEvents:UIControlEventTouchUpInside];
+    button.backgroundColor = [UIColor cyanColor];
+    
+    [self.view addSubview:button];
+    
+}
+
+- (void)setPropertys:(UIButton *)sender {
+//    sender.selected = !sender.selected;
+//    self.scrollView.canPullUp = sender.selected;;
+//    self.scrollView.canPullDown = !sender.selected;
+    
+    NSLog(@"1%@", _scrollView);
+    [_scrollView removeFromSuperview];
+    _scrollView = nil;
+    NSLog(@"2%@", _scrollView);
+}
+
+- (void)initScrollView {
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     scrollView.backgroundColor = [UIColor randomColor];
+    _scrollView = scrollView;
     scrollView.canPullUp = YES;
-    
+
     scrollView.headerRefreshBlock = ^(UIScrollView *rfScrollView) {
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             [NSThread sleepForTimeInterval:2];
@@ -31,7 +58,7 @@
             });
         });
     };
-    
+
     scrollView.footerRefreshBlock = ^(UIScrollView *rfScrollView){
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             [NSThread sleepForTimeInterval:2];
@@ -40,7 +67,7 @@
             });
         });
     };
-    
+
     scrollView.canPullDown = YES;
     [self.view addSubview:scrollView];
     
@@ -48,9 +75,8 @@
     view.height = view.height * 2;
     view.backgroundColor = [UIColor randomColor];
     [scrollView addSubview:view];
-    
+
     scrollView.contentSize = CGSizeMake(scrollView.width, view.height);
-    
 }
 
 @end

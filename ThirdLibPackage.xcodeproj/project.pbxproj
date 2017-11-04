@@ -21,7 +21,7 @@
 		EC48CCB71FAE0B7C005AE5D3 /* RefreshScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCB51FAE0B7C005AE5D3 /* RefreshScrollView.m */; };
 		EC48CCBE1FAE0CAD005AE5D3 /* UIView+AddFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCBC1FAE0BC5005AE5D3 /* UIView+AddFunc.m */; };
 		EC48CCBF1FAE0CAF005AE5D3 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCBA1FAE0BC5005AE5D3 /* UIColor+Hex.m */; };
-		EC48CCC21FAE0D53005AE5D3 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCC11FAE0D53005AE5D3 /* UIScrollView+Refresh.m */; };
+		EC48CCCB1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +73,8 @@
 		EC48CCBB1FAE0BC5005AE5D3 /* UIView+AddFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AddFunc.h"; sourceTree = "<group>"; };
 		EC48CCBC1FAE0BC5005AE5D3 /* UIView+AddFunc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AddFunc.m"; sourceTree = "<group>"; };
 		EC48CCBD1FAE0BD1005AE5D3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		EC48CCC01FAE0D53005AE5D3 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
-		EC48CCC11FAE0D53005AE5D3 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		EC48CCC91FAE1BF3005AE5D3 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
 		FB673279643D53FBF10A58BD /* libPods-ThirdLibPackage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThirdLibPackage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,8 +162,8 @@
 				EC48CC871FAE09E6005AE5D3 /* ViewController.m */,
 				EC48CCB61FAE0B7C005AE5D3 /* RefreshScrollView.h */,
 				EC48CCB51FAE0B7C005AE5D3 /* RefreshScrollView.m */,
-				EC48CCC01FAE0D53005AE5D3 /* UIScrollView+Refresh.h */,
-				EC48CCC11FAE0D53005AE5D3 /* UIScrollView+Refresh.m */,
+				EC48CCC91FAE1BF3005AE5D3 /* UIScrollView+Refresh.h */,
+				EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */,
 				EC48CC891FAE09E6005AE5D3 /* Main.storyboard */,
 				EC48CC8C1FAE09E6005AE5D3 /* Assets.xcassets */,
 				EC48CC8E1FAE09E6005AE5D3 /* LaunchScreen.storyboard */,
@@ -497,9 +497,9 @@
 				EC48CC881FAE09E6005AE5D3 /* ViewController.m in Sources */,
 				EC48CCBF1FAE0CAF005AE5D3 /* UIColor+Hex.m in Sources */,
 				EC48CC931FAE09E6005AE5D3 /* main.m in Sources */,
+				EC48CCCB1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m in Sources */,
 				EC48CC851FAE09E6005AE5D3 /* AppDelegate.m in Sources */,
 				EC48CCB71FAE0B7C005AE5D3 /* RefreshScrollView.m in Sources */,
-				EC48CCC21FAE0D53005AE5D3 /* UIScrollView+Refresh.m in Sources */,
 				EC48CCBE1FAE0CAD005AE5D3 /* UIView+AddFunc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
