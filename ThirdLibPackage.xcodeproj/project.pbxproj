@@ -18,7 +18,6 @@
 		EC48CC931FAE09E6005AE5D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CC921FAE09E6005AE5D3 /* main.m */; };
 		EC48CC9D1FAE09E7005AE5D3 /* ThirdLibPackageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CC9C1FAE09E7005AE5D3 /* ThirdLibPackageTests.m */; };
 		EC48CCA81FAE09E7005AE5D3 /* ThirdLibPackageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCA71FAE09E7005AE5D3 /* ThirdLibPackageUITests.m */; };
-		EC48CCB71FAE0B7C005AE5D3 /* RefreshScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCB51FAE0B7C005AE5D3 /* RefreshScrollView.m */; };
 		EC48CCBE1FAE0CAD005AE5D3 /* UIView+AddFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCBC1FAE0BC5005AE5D3 /* UIView+AddFunc.m */; };
 		EC48CCBF1FAE0CAF005AE5D3 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCBA1FAE0BC5005AE5D3 /* UIColor+Hex.m */; };
 		EC48CCCB1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */; };
@@ -66,8 +65,6 @@
 		EC48CCA31FAE09E7005AE5D3 /* ThirdLibPackageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdLibPackageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC48CCA71FAE09E7005AE5D3 /* ThirdLibPackageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdLibPackageUITests.m; sourceTree = "<group>"; };
 		EC48CCA91FAE09E7005AE5D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC48CCB51FAE0B7C005AE5D3 /* RefreshScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshScrollView.m; sourceTree = "<group>"; };
-		EC48CCB61FAE0B7C005AE5D3 /* RefreshScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshScrollView.h; sourceTree = "<group>"; };
 		EC48CCB91FAE0BC5005AE5D3 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		EC48CCBA1FAE0BC5005AE5D3 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		EC48CCBB1FAE0BC5005AE5D3 /* UIView+AddFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AddFunc.h"; sourceTree = "<group>"; };
@@ -160,8 +157,6 @@
 				EC48CC841FAE09E6005AE5D3 /* AppDelegate.m */,
 				EC48CC861FAE09E6005AE5D3 /* ViewController.h */,
 				EC48CC871FAE09E6005AE5D3 /* ViewController.m */,
-				EC48CCB61FAE0B7C005AE5D3 /* RefreshScrollView.h */,
-				EC48CCB51FAE0B7C005AE5D3 /* RefreshScrollView.m */,
 				EC48CCC91FAE1BF3005AE5D3 /* UIScrollView+Refresh.h */,
 				EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */,
 				EC48CC891FAE09E6005AE5D3 /* Main.storyboard */,
@@ -499,7 +494,6 @@
 				EC48CC931FAE09E6005AE5D3 /* main.m in Sources */,
 				EC48CCCB1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m in Sources */,
 				EC48CC851FAE09E6005AE5D3 /* AppDelegate.m in Sources */,
-				EC48CCB71FAE0B7C005AE5D3 /* RefreshScrollView.m in Sources */,
 				EC48CCBE1FAE0CAD005AE5D3 /* UIView+AddFunc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
