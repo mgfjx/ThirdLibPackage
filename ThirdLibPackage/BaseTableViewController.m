@@ -46,6 +46,7 @@
     }
     
     cell.textLabel.text = titles[indexPath.row];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }

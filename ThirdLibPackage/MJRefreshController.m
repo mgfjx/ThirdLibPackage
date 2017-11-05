@@ -12,6 +12,7 @@
 @interface MJRefreshController ()<UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, strong) UIScrollView *scrollView ;
+@property (nonatomic, assign) BOOL selected ;
 
 @end
 
@@ -21,24 +22,20 @@
     [super viewDidLoad];
     
     self.title = @"MJRefresh封装";
+    _selected = YES;
     
 //    [self initTableView];
     [self initCollectionView];
     
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(100, 100, 100, 100);
-    [button addTarget:self action:@selector(setPropertys:) forControlEvents:UIControlEventTouchUpInside];
-    button.backgroundColor = [UIColor cyanColor];
-    
-    [self.view addSubview:button];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Change" style:UIBarButtonItemStylePlain target:self action:@selector(setPropertys:)];
     
 }
 
 - (void)setPropertys:(UIButton *)sender {
-    sender.selected = !sender.selected;
-    self.scrollView.canPullUp = sender.selected;
-    self.scrollView.canPullDown = !sender.selected;
+    self.scrollView.canPullUp = !_selected;
+    self.scrollView.canPullDown = _selected;
+    _selected = !_selected;
 }
 
 - (void)setMJRefresh {
@@ -62,6 +59,15 @@
             });
         });
     };
+    
+    if (@available(iOS 11.0, *)) {
+        _scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
+    _scrollView.y += 64;
+    _scrollView.height -= 64;
 }
 
 - (void)initScrollView {
@@ -140,7 +146,7 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 100;
+    return 200;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
