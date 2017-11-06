@@ -17,8 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    titles = @[@"MJRefresh封装"];
-    controllers = @[@"MJRefreshController"];
+    titles = @[@"MJRefresh封装", @"倒计时Button"];
+    controllers = @[@"MJRefreshController", @"CountViewController"];
+    
+    
     
 }
 

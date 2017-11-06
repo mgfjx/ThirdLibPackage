@@ -23,6 +23,9 @@
 		EC48CCBE1FAE0CAD005AE5D3 /* UIView+AddFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCBC1FAE0BC5005AE5D3 /* UIView+AddFunc.m */; };
 		EC48CCBF1FAE0CAF005AE5D3 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCBA1FAE0BC5005AE5D3 /* UIColor+Hex.m */; };
 		EC48CCCB1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */; };
+		ECE80A411FB028C300FD69DA /* CountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE80A3F1FB028C300FD69DA /* CountViewController.m */; };
+		ECE80A421FB028C300FD69DA /* CountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECE80A401FB028C300FD69DA /* CountViewController.xib */; };
+		ECE80A451FB0299600FD69DA /* UIButton+Count.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE80A441FB0299600FD69DA /* UIButton+Count.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,11 @@
 		EC48CCBD1FAE0BD1005AE5D3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		EC48CCC91FAE1BF3005AE5D3 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		ECE80A3E1FB028C300FD69DA /* CountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountViewController.h; sourceTree = "<group>"; };
+		ECE80A3F1FB028C300FD69DA /* CountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountViewController.m; sourceTree = "<group>"; };
+		ECE80A401FB028C300FD69DA /* CountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountViewController.xib; sourceTree = "<group>"; };
+		ECE80A431FB0299600FD69DA /* UIButton+Count.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Count.h"; sourceTree = "<group>"; };
+		ECE80A441FB0299600FD69DA /* UIButton+Count.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Count.m"; sourceTree = "<group>"; };
 		FB673279643D53FBF10A58BD /* libPods-ThirdLibPackage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThirdLibPackage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -169,6 +177,11 @@
 				EC2795471FAF4E7A007FC139 /* MJRefreshController.m */,
 				EC48CCC91FAE1BF3005AE5D3 /* UIScrollView+Refresh.h */,
 				EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */,
+				ECE80A3E1FB028C300FD69DA /* CountViewController.h */,
+				ECE80A3F1FB028C300FD69DA /* CountViewController.m */,
+				ECE80A401FB028C300FD69DA /* CountViewController.xib */,
+				ECE80A431FB0299600FD69DA /* UIButton+Count.h */,
+				ECE80A441FB0299600FD69DA /* UIButton+Count.m */,
 				EC48CC891FAE09E6005AE5D3 /* Main.storyboard */,
 				EC48CC8C1FAE09E6005AE5D3 /* Assets.xcassets */,
 				EC48CC8E1FAE09E6005AE5D3 /* LaunchScreen.storyboard */,
@@ -322,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE80A421FB028C300FD69DA /* CountViewController.xib in Resources */,
 				EC48CC901FAE09E6005AE5D3 /* LaunchScreen.storyboard in Resources */,
 				EC48CC8D1FAE09E6005AE5D3 /* Assets.xcassets in Resources */,
 				EC48CC8B1FAE09E6005AE5D3 /* Main.storyboard in Resources */,
@@ -506,7 +520,9 @@
 				EC2795451FAF4CB9007FC139 /* BaseTableViewController.m in Sources */,
 				EC48CCCB1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m in Sources */,
 				EC48CC851FAE09E6005AE5D3 /* AppDelegate.m in Sources */,
+				ECE80A411FB028C300FD69DA /* CountViewController.m in Sources */,
 				EC48CCBE1FAE0CAD005AE5D3 /* UIView+AddFunc.m in Sources */,
+				ECE80A451FB0299600FD69DA /* UIButton+Count.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +691,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = ThirdLibPackage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiexiaolong.test.ThirdLibPackage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -692,6 +709,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = ThirdLibPackage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiexiaolong.test.ThirdLibPackage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
