@@ -20,9 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.btn.countDownned = YES;
+    self.btn.countDownable = YES;
     
-    [self.btn setCounter:10 begin:^(UIButton *sender) {
+    [self.btn setCounter:3 begin:^(UIButton *sender) {
         sender.userInteractionEnabled = NO;
         sender.backgroundColor = [UIColor lightGrayColor];
     } counting:^(UIButton *sender, NSUInteger countNumber) {

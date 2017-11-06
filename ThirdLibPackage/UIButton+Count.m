@@ -30,13 +30,13 @@ const char *countNumberKey = "countNumberKey";
     return [objc_getAssociatedObject(self, countNumberKey) integerValue];
 }
 
-const char *countDownnedKey = "countDownnedKey";
-- (void)setCountDownned:(BOOL)countDownned {
-    objc_setAssociatedObject(self, countDownnedKey, @(countDownned), OBJC_ASSOCIATION_ASSIGN);
+const char *countDownableKey = "countDownableKey";
+- (void)setCountDownable:(BOOL)countDownable {
+    objc_setAssociatedObject(self, countDownableKey, @(countDownable), OBJC_ASSOCIATION_ASSIGN);
 }
 
-- (BOOL)countDownned {
-    return [objc_getAssociatedObject(self, countNumberKey) boolValue];
+- (BOOL)countDownable {
+    return [objc_getAssociatedObject(self, countDownableKey) boolValue];
 }
 
 const char *countDownCallbackKey = "countDownCallbackKey";
@@ -85,7 +85,7 @@ const char *timerKey = "timerKey";
 - (BOOL)xl_beginTrackingWithTouch:(UITouch *)touch withEvent:(nullable UIEvent *)event {
     
     BOOL shouldCount = NO;
-    if (self.countDownned) {
+    if (self.countDownable) {
         if (self.countNumber > 0) {
             shouldCount = YES;
         }
@@ -103,8 +103,7 @@ const char *timerKey = "timerKey";
     dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
     self.timer = timer;
     __block NSUInteger countNum = self.countNumber;
-    
-    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 1 * NSEC_PER_SEC);
+    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
     dispatch_source_set_event_handler(timer, ^{
         
         if (countNum == weakSelf.countNumber) {
