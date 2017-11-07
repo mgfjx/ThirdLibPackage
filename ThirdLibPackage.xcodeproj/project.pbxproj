@@ -12,6 +12,7 @@
 		CEC5A5ABD50110878C65A96C /* libPods-ThirdLibPackageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F12EFD674CDCF9A580FB58 /* libPods-ThirdLibPackageUITests.a */; };
 		EC2795451FAF4CB9007FC139 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2795441FAF4CB9007FC139 /* BaseTableViewController.m */; };
 		EC2795481FAF4E7A007FC139 /* MJRefreshController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2795471FAF4E7A007FC139 /* MJRefreshController.m */; };
+		EC2CD2781FB135B300374447 /* CountButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2CD2771FB135B300374447 /* CountButton.m */; };
 		EC48CC851FAE09E6005AE5D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CC841FAE09E6005AE5D3 /* AppDelegate.m */; };
 		EC48CC881FAE09E6005AE5D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CC871FAE09E6005AE5D3 /* ViewController.m */; };
 		EC48CC8B1FAE09E6005AE5D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC48CC891FAE09E6005AE5D3 /* Main.storyboard */; };
@@ -58,6 +59,8 @@
 		EC2795441FAF4CB9007FC139 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		EC2795461FAF4E7A007FC139 /* MJRefreshController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefreshController.h; sourceTree = "<group>"; };
 		EC2795471FAF4E7A007FC139 /* MJRefreshController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshController.m; sourceTree = "<group>"; };
+		EC2CD2761FB135B300374447 /* CountButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountButton.h; sourceTree = "<group>"; };
+		EC2CD2771FB135B300374447 /* CountButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountButton.m; sourceTree = "<group>"; };
 		EC48CC801FAE09E6005AE5D3 /* ThirdLibPackage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdLibPackage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC48CC831FAE09E6005AE5D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC48CC841FAE09E6005AE5D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				ECE80A401FB028C300FD69DA /* CountViewController.xib */,
 				ECE80A431FB0299600FD69DA /* UIButton+Count.h */,
 				ECE80A441FB0299600FD69DA /* UIButton+Count.m */,
+				EC2CD2761FB135B300374447 /* CountButton.h */,
+				EC2CD2771FB135B300374447 /* CountButton.m */,
 				EC48CC891FAE09E6005AE5D3 /* Main.storyboard */,
 				EC48CC8C1FAE09E6005AE5D3 /* Assets.xcassets */,
 				EC48CC8E1FAE09E6005AE5D3 /* LaunchScreen.storyboard */,
@@ -521,6 +526,7 @@
 				EC48CCCB1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m in Sources */,
 				EC48CC851FAE09E6005AE5D3 /* AppDelegate.m in Sources */,
 				ECE80A411FB028C300FD69DA /* CountViewController.m in Sources */,
+				EC2CD2781FB135B300374447 /* CountButton.m in Sources */,
 				EC48CCBE1FAE0CAD005AE5D3 /* UIView+AddFunc.m in Sources */,
 				ECE80A451FB0299600FD69DA /* UIButton+Count.m in Sources */,
 			);

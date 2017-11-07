@@ -7,10 +7,11 @@
 //
 
 #import "CountViewController.h"
-#import "UIButton+Count.h"
+//#import "UIButton+Count.h"
+#import "CountButton.h"
 
 @interface CountViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *btn;
+@property (weak, nonatomic) IBOutlet CountButton *btn;
 @property (nonatomic, strong) dispatch_source_t timer ;
 
 @end
@@ -37,7 +38,7 @@
 }
 
 - (IBAction)clicked:(UIButton *)sender {
-    [self.btn stopCounter];
+//    [self.btn stopCounter];
     [self.btn removeFromSuperview];
     
 }
