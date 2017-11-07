@@ -23,7 +23,18 @@
     
     self.btn.countDownable = YES;
     
-    [self.btn setCounter:3 begin:^(UIButton *sender) {
+    
+    
+}
+
+- (IBAction)clicked:(UIButton *)sender {
+//    [self.btn stopCounter];
+    [self.btn removeFromSuperview];
+    
+}
+- (IBAction)startCount:(CountButton *)sender {
+    
+    [self.btn startCounter:3 begin:^(UIButton *sender) {
         sender.userInteractionEnabled = NO;
         sender.backgroundColor = [UIColor lightGrayColor];
     } counting:^(UIButton *sender, NSUInteger countNumber) {
@@ -36,10 +47,9 @@
     }];
     
 }
-
-- (IBAction)clicked:(UIButton *)sender {
-//    [self.btn stopCounter];
-    [self.btn removeFromSuperview];
+- (IBAction)stopCount:(id)sender {
+    
+    [self.btn stopCounter];
     
 }
 

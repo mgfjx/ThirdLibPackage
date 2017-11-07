@@ -27,6 +27,9 @@
                     <state key="normal" title="click">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="startCount:" destination="-1" eventType="touchUpInside" id="vBJ-m5-BqH"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hp-ta-v0N">
                     <rect key="frame" x="232" y="185" width="78" height="30"/>
@@ -39,9 +42,20 @@
                         <action selector="clicked:" destination="-1" eventType="touchUpInside" id="gD9-4K-gRO"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUg-wS-nal">
+                    <rect key="frame" x="232" y="126" width="78" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.08978850394" green="0.59991121290000005" blue="0.83291906120000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="top">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="stopCount:" destination="-1" eventType="touchUpInside" id="6w9-UR-WxC"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="24.5" y="51.5"/>
+            <point key="canvasLocation" x="-182" y="40"/>
         </view>
     </objects>
 </document>

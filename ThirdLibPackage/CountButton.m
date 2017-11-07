@@ -20,22 +20,6 @@
 
 @implementation CountButton
 
-- (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
-    
-    BOOL shouldCount = NO;
-    if (self.countDownable) {
-        if (self.countNumber > 0) {
-            shouldCount = YES;
-        }
-    }
-    
-    if (shouldCount) {
-        [self createTimer];
-    }
-    
-    return [super beginTrackingWithTouch:touch withEvent:event];
-}
-
 - (void)createTimer {
     __block typeof(self) weakSelf = self;
     dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
@@ -78,11 +62,33 @@
     [super removeFromSuperview];
 }
 
-- (void)setCounter:(NSUInteger)countNumber begin:(CountDownStateCallback)beginCallback counting:(CountDownCompletion)countingCallback end:(CountDownStateCallback)endCallback {
+- (void)startCounter:(NSUInteger)countNumber begin:(CountDownStateCallback)beginCallback counting:(CountDownCompletion)countingCallback end:(CountDownStateCallback)endCallback {
     self.countNumber = countNumber;
     self.countBeginCallback = beginCallback;
     self.countDownCallback = countingCallback;
     self.countEndCallback = endCallback;
+    
+    BOOL shouldCount = NO;
+    if (self.countDownable) {
+        if (self.countNumber > 0) {
+            shouldCount = YES;
+        }
+    }
+    
+    if (shouldCount) {
+        [self createTimer];
+    }
+}
+
+- (void)stopCounter {
+    if (self.timer) {
+        dispatch_source_cancel(self.timer);
+    }
+    
+    if (self.countEndCallback) {
+        self.countEndCallback(self);
+    }
+    
 }
 
 @end

@@ -15,6 +15,8 @@ typedef void(^CountDownStateCallback)(UIButton *sender);
 
 @property (nonatomic, assign) BOOL countDownable ;
 
-- (void)setCounter:(NSUInteger)countNumber begin:(CountDownStateCallback)beginCallback counting:(CountDownCompletion)countingCallback end:(CountDownStateCallback)endCallback ;
+- (void)startCounter:(NSUInteger)countNumber begin:(CountDownStateCallback)beginCallback counting:(CountDownCompletion)countingCallback end:(CountDownStateCallback)endCallback ;
+
+- (void)stopCounter ;
 
 @end
