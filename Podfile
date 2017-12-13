@@ -7,6 +7,8 @@ target 'ThirdLibPackage' do
 
   # Pods for ThirdLibPackage
   pod 'MJRefresh', '~> 3.1.12'
+  pod 'MBProgressHUD', '~> 1.0.0'
+  pod 'SVProgressHUD', '~> 2.1.2'
 
   target 'ThirdLibPackageTests' do
     inherit! :search_paths

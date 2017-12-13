@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "XLWelcomePageView.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    ViewController *vc = [[ViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    [XLWelcomePageView showWelcomePageOnWindow:self.window imageNames:@[@"welcome1.jpg",@"welcome2.jpg",@"welcome3.jpg",@"welcome4.jpg",@"welcome5.jpg",@"welcome6.jpg",]];
+    
     return YES;
 }
 

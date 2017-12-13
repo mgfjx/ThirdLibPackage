@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    titles = @[@"MJRefresh封装", @"倒计时Button"];
-    controllers = @[@"MJRefreshController", @"CountViewController"];
+    titles = @[@"MJRefresh封装", @"倒计时Button", @"等待视图Dialog", @"闪屏页"];
+    controllers = @[@"MJRefreshController", @"CountViewController", @"DialogViewController", @"SplashViewController"];
     
     
     

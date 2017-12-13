@@ -10,6 +10,14 @@
 		3FF922761EEFF7CE884DD31A /* libPods-ThirdLibPackageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B0257DC9B241B5495469F2 /* libPods-ThirdLibPackageTests.a */; };
 		9B5F9C2CA2A3E0BC11B198BA /* libPods-ThirdLibPackage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB673279643D53FBF10A58BD /* libPods-ThirdLibPackage.a */; };
 		CEC5A5ABD50110878C65A96C /* libPods-ThirdLibPackageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F12EFD674CDCF9A580FB58 /* libPods-ThirdLibPackageUITests.a */; };
+		EC10422F1FE11E900096C766 /* welcome1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC10422D1FE11E8F0096C766 /* welcome1.jpg */; };
+		EC1042301FE11E900096C766 /* welcome2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC10422E1FE11E900096C766 /* welcome2.jpg */; };
+		EC1042351FE11E980096C766 /* welcome3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC1042311FE11E980096C766 /* welcome3.jpg */; };
+		EC1042361FE11E980096C766 /* welcome6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC1042321FE11E980096C766 /* welcome6.jpg */; };
+		EC1042371FE11E980096C766 /* welcome4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC1042331FE11E980096C766 /* welcome4.jpg */; };
+		EC1042381FE11E980096C766 /* welcome5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC1042341FE11E980096C766 /* welcome5.jpg */; };
+		EC1C795A1FB61C2F0012CE80 /* PublicDialogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C79591FB61C2F0012CE80 /* PublicDialogManager.m */; };
+		EC1C79601FB6F08D0012CE80 /* DialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C795F1FB6F08D0012CE80 /* DialogViewController.m */; };
 		EC2795451FAF4CB9007FC139 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2795441FAF4CB9007FC139 /* BaseTableViewController.m */; };
 		EC2795481FAF4E7A007FC139 /* MJRefreshController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2795471FAF4E7A007FC139 /* MJRefreshController.m */; };
 		EC2CD2781FB135B300374447 /* CountButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2CD2771FB135B300374447 /* CountButton.m */; };
@@ -24,6 +32,10 @@
 		EC48CCBE1FAE0CAD005AE5D3 /* UIView+AddFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCBC1FAE0BC5005AE5D3 /* UIView+AddFunc.m */; };
 		EC48CCBF1FAE0CAF005AE5D3 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCBA1FAE0BC5005AE5D3 /* UIColor+Hex.m */; };
 		EC48CCCB1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */; };
+		ECD980EF1FDFCECB00D81F1D /* XLSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD980EE1FDFCECB00D81F1D /* XLSplashView.m */; };
+		ECD980F31FDFCF3000D81F1D /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD980F11FDFCF3000D81F1D /* SplashViewController.m */; };
+		ECD980F41FDFCF3000D81F1D /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECD980F21FDFCF3000D81F1D /* SplashViewController.xib */; };
+		ECD980FA1FDFD4BD00D81F1D /* XLWelcomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD980F91FDFD4BD00D81F1D /* XLWelcomePageView.m */; };
 		ECE80A411FB028C300FD69DA /* CountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE80A3F1FB028C300FD69DA /* CountViewController.m */; };
 		ECE80A421FB028C300FD69DA /* CountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECE80A401FB028C300FD69DA /* CountViewController.xib */; };
 		ECE80A451FB0299600FD69DA /* UIButton+Count.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE80A441FB0299600FD69DA /* UIButton+Count.m */; };
@@ -55,6 +67,16 @@
 		A2F12EFD674CDCF9A580FB58 /* libPods-ThirdLibPackageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThirdLibPackageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CAFBFED9E6CD2FFD021D16 /* Pods-ThirdLibPackageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdLibPackageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThirdLibPackageTests/Pods-ThirdLibPackageTests.release.xcconfig"; sourceTree = "<group>"; };
 		A8A2163939E0FF6C9CED9A98 /* Pods-ThirdLibPackageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdLibPackageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThirdLibPackageUITests/Pods-ThirdLibPackageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC10422D1FE11E8F0096C766 /* welcome1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcome1.jpg; sourceTree = "<group>"; };
+		EC10422E1FE11E900096C766 /* welcome2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcome2.jpg; sourceTree = "<group>"; };
+		EC1042311FE11E980096C766 /* welcome3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcome3.jpg; sourceTree = "<group>"; };
+		EC1042321FE11E980096C766 /* welcome6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcome6.jpg; sourceTree = "<group>"; };
+		EC1042331FE11E980096C766 /* welcome4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcome4.jpg; sourceTree = "<group>"; };
+		EC1042341FE11E980096C766 /* welcome5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcome5.jpg; sourceTree = "<group>"; };
+		EC1C79581FB61C2F0012CE80 /* PublicDialogManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicDialogManager.h; sourceTree = "<group>"; };
+		EC1C79591FB61C2F0012CE80 /* PublicDialogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicDialogManager.m; sourceTree = "<group>"; };
+		EC1C795E1FB6F08D0012CE80 /* DialogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DialogViewController.h; sourceTree = "<group>"; };
+		EC1C795F1FB6F08D0012CE80 /* DialogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialogViewController.m; sourceTree = "<group>"; };
 		EC2795431FAF4CB9007FC139 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		EC2795441FAF4CB9007FC139 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		EC2795461FAF4E7A007FC139 /* MJRefreshController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefreshController.h; sourceTree = "<group>"; };
@@ -84,6 +106,13 @@
 		EC48CCBD1FAE0BD1005AE5D3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		EC48CCC91FAE1BF3005AE5D3 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		ECD980ED1FDFCECB00D81F1D /* XLSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSplashView.h; sourceTree = "<group>"; };
+		ECD980EE1FDFCECB00D81F1D /* XLSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSplashView.m; sourceTree = "<group>"; };
+		ECD980F01FDFCF3000D81F1D /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		ECD980F11FDFCF3000D81F1D /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		ECD980F21FDFCF3000D81F1D /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		ECD980F81FDFD4BD00D81F1D /* XLWelcomePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLWelcomePageView.h; sourceTree = "<group>"; };
+		ECD980F91FDFD4BD00D81F1D /* XLWelcomePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLWelcomePageView.m; sourceTree = "<group>"; };
 		ECE80A3E1FB028C300FD69DA /* CountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountViewController.h; sourceTree = "<group>"; };
 		ECE80A3F1FB028C300FD69DA /* CountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountViewController.m; sourceTree = "<group>"; };
 		ECE80A401FB028C300FD69DA /* CountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountViewController.xib; sourceTree = "<group>"; };
@@ -143,6 +172,55 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EC10422C1FE11E2E0096C766 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EC10422D1FE11E8F0096C766 /* welcome1.jpg */,
+				EC10422E1FE11E900096C766 /* welcome2.jpg */,
+				EC1042311FE11E980096C766 /* welcome3.jpg */,
+				EC1042331FE11E980096C766 /* welcome4.jpg */,
+				EC1042341FE11E980096C766 /* welcome5.jpg */,
+				EC1042321FE11E980096C766 /* welcome6.jpg */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EC1C795B1FB6EF180012CE80 /* MJRefreshPackage */ = {
+			isa = PBXGroup;
+			children = (
+				EC2795461FAF4E7A007FC139 /* MJRefreshController.h */,
+				EC2795471FAF4E7A007FC139 /* MJRefreshController.m */,
+				EC48CCC91FAE1BF3005AE5D3 /* UIScrollView+Refresh.h */,
+				EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */,
+			);
+			path = MJRefreshPackage;
+			sourceTree = "<group>";
+		};
+		EC1C795C1FB6EFFB0012CE80 /* CountButton */ = {
+			isa = PBXGroup;
+			children = (
+				ECE80A3E1FB028C300FD69DA /* CountViewController.h */,
+				ECE80A3F1FB028C300FD69DA /* CountViewController.m */,
+				ECE80A401FB028C300FD69DA /* CountViewController.xib */,
+				ECE80A431FB0299600FD69DA /* UIButton+Count.h */,
+				ECE80A441FB0299600FD69DA /* UIButton+Count.m */,
+				EC2CD2761FB135B300374447 /* CountButton.h */,
+				EC2CD2771FB135B300374447 /* CountButton.m */,
+			);
+			path = CountButton;
+			sourceTree = "<group>";
+		};
+		EC1C795D1FB6F0590012CE80 /* DialogView */ = {
+			isa = PBXGroup;
+			children = (
+				EC1C79581FB61C2F0012CE80 /* PublicDialogManager.h */,
+				EC1C79591FB61C2F0012CE80 /* PublicDialogManager.m */,
+				EC1C795E1FB6F08D0012CE80 /* DialogViewController.h */,
+				EC1C795F1FB6F08D0012CE80 /* DialogViewController.m */,
+			);
+			path = DialogView;
+			sourceTree = "<group>";
+		};
 		EC48CC771FAE09E6005AE5D3 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +247,7 @@
 		EC48CC821FAE09E6005AE5D3 /* ThirdLibPackage */ = {
 			isa = PBXGroup;
 			children = (
+				EC10422C1FE11E2E0096C766 /* Source */,
 				EC48CCB81FAE0BC5005AE5D3 /* Category */,
 				EC48CC831FAE09E6005AE5D3 /* AppDelegate.h */,
 				EC48CC841FAE09E6005AE5D3 /* AppDelegate.m */,
@@ -176,17 +255,10 @@
 				EC48CC871FAE09E6005AE5D3 /* ViewController.m */,
 				EC2795431FAF4CB9007FC139 /* BaseTableViewController.h */,
 				EC2795441FAF4CB9007FC139 /* BaseTableViewController.m */,
-				EC2795461FAF4E7A007FC139 /* MJRefreshController.h */,
-				EC2795471FAF4E7A007FC139 /* MJRefreshController.m */,
-				EC48CCC91FAE1BF3005AE5D3 /* UIScrollView+Refresh.h */,
-				EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */,
-				ECE80A3E1FB028C300FD69DA /* CountViewController.h */,
-				ECE80A3F1FB028C300FD69DA /* CountViewController.m */,
-				ECE80A401FB028C300FD69DA /* CountViewController.xib */,
-				ECE80A431FB0299600FD69DA /* UIButton+Count.h */,
-				ECE80A441FB0299600FD69DA /* UIButton+Count.m */,
-				EC2CD2761FB135B300374447 /* CountButton.h */,
-				EC2CD2771FB135B300374447 /* CountButton.m */,
+				EC1C795B1FB6EF180012CE80 /* MJRefreshPackage */,
+				EC1C795C1FB6EFFB0012CE80 /* CountButton */,
+				EC1C795D1FB6F0590012CE80 /* DialogView */,
+				ECD980E91FDFCE8900D81F1D /* SplashAndWelcomePage */,
 				EC48CC891FAE09E6005AE5D3 /* Main.storyboard */,
 				EC48CC8C1FAE09E6005AE5D3 /* Assets.xcassets */,
 				EC48CC8E1FAE09E6005AE5D3 /* LaunchScreen.storyboard */,
@@ -223,6 +295,20 @@
 				EC48CCBC1FAE0BC5005AE5D3 /* UIView+AddFunc.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		ECD980E91FDFCE8900D81F1D /* SplashAndWelcomePage */ = {
+			isa = PBXGroup;
+			children = (
+				ECD980ED1FDFCECB00D81F1D /* XLSplashView.h */,
+				ECD980EE1FDFCECB00D81F1D /* XLSplashView.m */,
+				ECD980F01FDFCF3000D81F1D /* SplashViewController.h */,
+				ECD980F11FDFCF3000D81F1D /* SplashViewController.m */,
+				ECD980F21FDFCF3000D81F1D /* SplashViewController.xib */,
+				ECD980F81FDFD4BD00D81F1D /* XLWelcomePageView.h */,
+				ECD980F91FDFD4BD00D81F1D /* XLWelcomePageView.m */,
+			);
+			path = SplashAndWelcomePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,7 +428,14 @@
 			files = (
 				ECE80A421FB028C300FD69DA /* CountViewController.xib in Resources */,
 				EC48CC901FAE09E6005AE5D3 /* LaunchScreen.storyboard in Resources */,
+				EC1042361FE11E980096C766 /* welcome6.jpg in Resources */,
+				EC1042351FE11E980096C766 /* welcome3.jpg in Resources */,
+				EC1042381FE11E980096C766 /* welcome5.jpg in Resources */,
+				EC10422F1FE11E900096C766 /* welcome1.jpg in Resources */,
 				EC48CC8D1FAE09E6005AE5D3 /* Assets.xcassets in Resources */,
+				ECD980F41FDFCF3000D81F1D /* SplashViewController.xib in Resources */,
+				EC1042371FE11E980096C766 /* welcome4.jpg in Resources */,
+				EC1042301FE11E900096C766 /* welcome2.jpg in Resources */,
 				EC48CC8B1FAE09E6005AE5D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +480,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ThirdLibPackage/Pods-ThirdLibPackage-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -520,10 +614,15 @@
 			files = (
 				EC48CC881FAE09E6005AE5D3 /* ViewController.m in Sources */,
 				EC48CCBF1FAE0CAF005AE5D3 /* UIColor+Hex.m in Sources */,
+				ECD980EF1FDFCECB00D81F1D /* XLSplashView.m in Sources */,
+				EC1C79601FB6F08D0012CE80 /* DialogViewController.m in Sources */,
 				EC2795481FAF4E7A007FC139 /* MJRefreshController.m in Sources */,
+				ECD980F31FDFCF3000D81F1D /* SplashViewController.m in Sources */,
+				ECD980FA1FDFD4BD00D81F1D /* XLWelcomePageView.m in Sources */,
 				EC48CC931FAE09E6005AE5D3 /* main.m in Sources */,
 				EC2795451FAF4CB9007FC139 /* BaseTableViewController.m in Sources */,
 				EC48CCCB1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m in Sources */,
+				EC1C795A1FB61C2F0012CE80 /* PublicDialogManager.m in Sources */,
 				EC48CC851FAE09E6005AE5D3 /* AppDelegate.m in Sources */,
 				ECE80A411FB028C300FD69DA /* CountViewController.m in Sources */,
 				EC2CD2781FB135B300374447 /* CountButton.m in Sources */,
