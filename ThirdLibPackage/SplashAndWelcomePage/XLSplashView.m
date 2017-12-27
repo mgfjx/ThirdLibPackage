@@ -8,6 +8,8 @@
 
 #import "XLSplashView.h"
 
+#define LinkIdentifier @"LinkIdentifier"
+
 @interface XLSplashView ()
 
 @property (nonatomic, strong) UIImageView *imageView ;
@@ -98,7 +100,7 @@ static XLSplashView *singleton = nil;
 }
 
 - (void)listenAppEvents {
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(start) name:UIApplicationWillEnterForegroundNotification object:nil];
+    //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(start) name:UIApplicationWillEnterForegroundNotification object:nil];
 }
 
 - (void)skip:(UIButton *)sender {
@@ -170,7 +172,7 @@ static XLSplashView *singleton = nil;
 
 - (void)tapImage:(UITapGestureRecognizer *)tap {
     if (self.tapCallback) {
-        NSString *link = [[NSUserDefaults standardUserDefaults] objectForKey:self.filePath];
+        NSString *link = [[NSUserDefaults standardUserDefaults] objectForKey:LinkIdentifier];
         self.tapCallback(link);
     }
     [self removeSelf];
@@ -183,7 +185,7 @@ static XLSplashView *singleton = nil;
 
 - (NSString *)filePath {
     NSString *document = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    NSString *filePath = [document stringByAppendingPathComponent:@"old.jpg"];
+    NSString *filePath = [document stringByAppendingPathComponent:@"XLSplashView.jpg"];
     
     return filePath;
 }
@@ -193,8 +195,10 @@ static XLSplashView *singleton = nil;
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDownloadTask *task = [session downloadTaskWithURL:[NSURL URLWithString:_imgUrl] completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSData *data = [NSData dataWithContentsOfURL:location];
-        [[NSFileManager defaultManager] createFileAtPath:self.filePath contents:data attributes:nil];
-        [[NSUserDefaults standardUserDefaults] setObject:_link forKey:self.filePath];
+        if (data) {
+            [[NSFileManager defaultManager] createFileAtPath:self.filePath contents:data attributes:nil];
+            [[NSUserDefaults standardUserDefaults] setObject:_link forKey:LinkIdentifier];
+        }
     }];
     [task resume];
 }
@@ -204,3 +208,4 @@ static XLSplashView *singleton = nil;
 }
 
 @end
+

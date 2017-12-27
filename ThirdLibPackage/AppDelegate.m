@@ -26,7 +26,7 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
-    [XLWelcomePageView showWelcomePageOnWindow:self.window imageNames:@[@"welcome1.jpg",@"welcome2.jpg",@"welcome3.jpg",@"welcome4.jpg",@"welcome5.jpg",@"welcome6.jpg",]];
+//    [XLWelcomePageView showWelcomePageOnWindow:self.window imageNames:@[@"welcome1.jpg",@"welcome2.jpg",@"welcome3.jpg",@"welcome4.jpg",@"welcome5.jpg",@"welcome6.jpg",]];
     
     return YES;
 }
