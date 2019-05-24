@@ -10,6 +10,8 @@
 		3FF922761EEFF7CE884DD31A /* libPods-ThirdLibPackageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B0257DC9B241B5495469F2 /* libPods-ThirdLibPackageTests.a */; };
 		9B5F9C2CA2A3E0BC11B198BA /* libPods-ThirdLibPackage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB673279643D53FBF10A58BD /* libPods-ThirdLibPackage.a */; };
 		CEC5A5ABD50110878C65A96C /* libPods-ThirdLibPackageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F12EFD674CDCF9A580FB58 /* libPods-ThirdLibPackageUITests.a */; };
+		EC1C795A1FB61C2F0012CE80 /* PublicDialogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C79591FB61C2F0012CE80 /* PublicDialogManager.m */; };
+		EC1C79601FB6F08D0012CE80 /* DialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C795F1FB6F08D0012CE80 /* DialogViewController.m */; };
 		EC2795451FAF4CB9007FC139 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2795441FAF4CB9007FC139 /* BaseTableViewController.m */; };
 		EC2795481FAF4E7A007FC139 /* MJRefreshController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2795471FAF4E7A007FC139 /* MJRefreshController.m */; };
 		EC2CD2781FB135B300374447 /* CountButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2CD2771FB135B300374447 /* CountButton.m */; };
@@ -55,6 +57,10 @@
 		A2F12EFD674CDCF9A580FB58 /* libPods-ThirdLibPackageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThirdLibPackageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CAFBFED9E6CD2FFD021D16 /* Pods-ThirdLibPackageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdLibPackageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThirdLibPackageTests/Pods-ThirdLibPackageTests.release.xcconfig"; sourceTree = "<group>"; };
 		A8A2163939E0FF6C9CED9A98 /* Pods-ThirdLibPackageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdLibPackageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThirdLibPackageUITests/Pods-ThirdLibPackageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC1C79581FB61C2F0012CE80 /* PublicDialogManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicDialogManager.h; sourceTree = "<group>"; };
+		EC1C79591FB61C2F0012CE80 /* PublicDialogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicDialogManager.m; sourceTree = "<group>"; };
+		EC1C795E1FB6F08D0012CE80 /* DialogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DialogViewController.h; sourceTree = "<group>"; };
+		EC1C795F1FB6F08D0012CE80 /* DialogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialogViewController.m; sourceTree = "<group>"; };
 		EC2795431FAF4CB9007FC139 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		EC2795441FAF4CB9007FC139 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		EC2795461FAF4E7A007FC139 /* MJRefreshController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefreshController.h; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 		EC48CCBD1FAE0BD1005AE5D3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		EC48CCC91FAE1BF3005AE5D3 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		ECB796DC2296ED990027322D /* PublicDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicDefine.h; sourceTree = "<group>"; };
 		ECE80A3E1FB028C300FD69DA /* CountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountViewController.h; sourceTree = "<group>"; };
 		ECE80A3F1FB028C300FD69DA /* CountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountViewController.m; sourceTree = "<group>"; };
 		ECE80A401FB028C300FD69DA /* CountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountViewController.xib; sourceTree = "<group>"; };
@@ -143,10 +150,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EC1C795B1FB6EF180012CE80 /* MJRefreshPackage */ = {
+			isa = PBXGroup;
+			children = (
+				EC2795461FAF4E7A007FC139 /* MJRefreshController.h */,
+				EC2795471FAF4E7A007FC139 /* MJRefreshController.m */,
+				EC48CCC91FAE1BF3005AE5D3 /* UIScrollView+Refresh.h */,
+				EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */,
+			);
+			path = MJRefreshPackage;
+			sourceTree = "<group>";
+		};
+		EC1C795C1FB6EFFB0012CE80 /* CountButton */ = {
+			isa = PBXGroup;
+			children = (
+				ECE80A3E1FB028C300FD69DA /* CountViewController.h */,
+				ECE80A3F1FB028C300FD69DA /* CountViewController.m */,
+				ECE80A401FB028C300FD69DA /* CountViewController.xib */,
+				ECE80A431FB0299600FD69DA /* UIButton+Count.h */,
+				ECE80A441FB0299600FD69DA /* UIButton+Count.m */,
+				EC2CD2761FB135B300374447 /* CountButton.h */,
+				EC2CD2771FB135B300374447 /* CountButton.m */,
+			);
+			path = CountButton;
+			sourceTree = "<group>";
+		};
+		EC1C795D1FB6F0590012CE80 /* DialogView */ = {
+			isa = PBXGroup;
+			children = (
+				EC1C79581FB61C2F0012CE80 /* PublicDialogManager.h */,
+				EC1C79591FB61C2F0012CE80 /* PublicDialogManager.m */,
+				EC1C795E1FB6F08D0012CE80 /* DialogViewController.h */,
+				EC1C795F1FB6F08D0012CE80 /* DialogViewController.m */,
+			);
+			path = DialogView;
+			sourceTree = "<group>";
+		};
 		EC48CC771FAE09E6005AE5D3 = {
 			isa = PBXGroup;
 			children = (
 				EC48CCBD1FAE0BD1005AE5D3 /* PrefixHeader.pch */,
+				ECB796DC2296ED990027322D /* PublicDefine.h */,
 				EC48CC821FAE09E6005AE5D3 /* ThirdLibPackage */,
 				EC48CC9B1FAE09E7005AE5D3 /* ThirdLibPackageTests */,
 				EC48CCA61FAE09E7005AE5D3 /* ThirdLibPackageUITests */,
@@ -176,17 +220,9 @@
 				EC48CC871FAE09E6005AE5D3 /* ViewController.m */,
 				EC2795431FAF4CB9007FC139 /* BaseTableViewController.h */,
 				EC2795441FAF4CB9007FC139 /* BaseTableViewController.m */,
-				EC2795461FAF4E7A007FC139 /* MJRefreshController.h */,
-				EC2795471FAF4E7A007FC139 /* MJRefreshController.m */,
-				EC48CCC91FAE1BF3005AE5D3 /* UIScrollView+Refresh.h */,
-				EC48CCCA1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m */,
-				ECE80A3E1FB028C300FD69DA /* CountViewController.h */,
-				ECE80A3F1FB028C300FD69DA /* CountViewController.m */,
-				ECE80A401FB028C300FD69DA /* CountViewController.xib */,
-				ECE80A431FB0299600FD69DA /* UIButton+Count.h */,
-				ECE80A441FB0299600FD69DA /* UIButton+Count.m */,
-				EC2CD2761FB135B300374447 /* CountButton.h */,
-				EC2CD2771FB135B300374447 /* CountButton.m */,
+				EC1C795B1FB6EF180012CE80 /* MJRefreshPackage */,
+				EC1C795C1FB6EFFB0012CE80 /* CountButton */,
+				EC1C795D1FB6F0590012CE80 /* DialogView */,
 				EC48CC891FAE09E6005AE5D3 /* Main.storyboard */,
 				EC48CC8C1FAE09E6005AE5D3 /* Assets.xcassets */,
 				EC48CC8E1FAE09E6005AE5D3 /* LaunchScreen.storyboard */,
@@ -387,6 +423,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ThirdLibPackage/Pods-ThirdLibPackage-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -520,10 +557,12 @@
 			files = (
 				EC48CC881FAE09E6005AE5D3 /* ViewController.m in Sources */,
 				EC48CCBF1FAE0CAF005AE5D3 /* UIColor+Hex.m in Sources */,
+				EC1C79601FB6F08D0012CE80 /* DialogViewController.m in Sources */,
 				EC2795481FAF4E7A007FC139 /* MJRefreshController.m in Sources */,
 				EC48CC931FAE09E6005AE5D3 /* main.m in Sources */,
 				EC2795451FAF4CB9007FC139 /* BaseTableViewController.m in Sources */,
 				EC48CCCB1FAE1BF3005AE5D3 /* UIScrollView+Refresh.m in Sources */,
+				EC1C795A1FB61C2F0012CE80 /* PublicDialogManager.m in Sources */,
 				EC48CC851FAE09E6005AE5D3 /* AppDelegate.m in Sources */,
 				ECE80A411FB028C300FD69DA /* CountViewController.m in Sources */,
 				EC2CD2781FB135B300374447 /* CountButton.m in Sources */,

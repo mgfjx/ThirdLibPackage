@@ -66,8 +66,8 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    _scrollView.y += 64;
-    _scrollView.height -= 64;
+    _scrollView.y += kNavigationBar_Height;
+    _scrollView.height -= kNavigationBar_Height;
 }
 
 - (void)initScrollView {
