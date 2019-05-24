@@ -35,15 +35,15 @@
 - (IBAction)startCount:(CountButton *)sender {
     
     [self.btn startCounter:3 begin:^(UIButton *sender) {
-        sender.userInteractionEnabled = NO;
-        sender.backgroundColor = [UIColor lightGrayColor];
+//        sender.userInteractionEnabled = NO;
+//        sender.backgroundColor = [UIColor lightGrayColor];
     } counting:^(UIButton *sender, NSUInteger countNumber) {
         NSString *string = [NSString stringWithFormat:@"%lu秒", countNumber];
         [sender setTitle:string forState:UIControlStateNormal];
     } end:^(UIButton *sender) {
-        sender.userInteractionEnabled = YES;
+//        sender.userInteractionEnabled = YES;
         [sender setTitle:@"click" forState:UIControlStateNormal];
-        sender.backgroundColor = [UIColor colorWithHexString:@"#1799d4"];
+//        sender.backgroundColor = [UIColor colorWithHexString:@"#1799d4"];
     }];
     
 }
