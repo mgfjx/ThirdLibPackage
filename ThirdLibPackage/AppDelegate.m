@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "XLWelcomePageView.h"
+//#import "XLWelcomePageView.h"
 
 @interface AppDelegate ()
 
